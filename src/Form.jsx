@@ -68,7 +68,7 @@ function Form() {
   };
 
   return (
-    <div className="w-screen h-full  bg-black">
+    <div className="max-w-screen h-full  bg-black">
       <div className="bg-white mx-auto rounded-xl max-w-[70%] pb-5">
         <div className="mx-4 py-2 pb-2 flex justify-between items-center">
           <p>Add User</p>
@@ -117,7 +117,7 @@ function Form() {
             </div>
             <button
               onClick={handleButtonClick}
-              className="absolute left-[60%] -bottom-3 bg-spanishGray text-white rounded-[50%] px-2"
+              className="relative   left-[55%] bottom-10 bg-spanishGray text-white rounded-[50%] px-2"
               useRef={fileInputRef}
             >
               +
@@ -224,7 +224,7 @@ function Form() {
               <div className="w-full items-center">
                 <ul className="flex items-center">
                   {/* / bg-primaryblue text-white rounded-md text-md md:text-base */}
-                  <li className="w-20 text-center py-3">
+                  <li className="">
                     <button
                       onClick={() => gendercontroller("male")}
                       className={
@@ -236,7 +236,7 @@ function Form() {
                       Male
                     </button>
                   </li>
-                  <li className='"w-20 text-center py-3'>
+                  <li className=''>
                     <button
                       onClick={() => gendercontroller("female")}
                       className={
@@ -248,13 +248,13 @@ function Form() {
                       Female
                     </button>
                   </li>
-                  <li className='"w-20 text-center py-3'>
+                  <li className=''>
                     <button
                       onClick={() => gendercontroller("non")}
                       className={
                         gender === "non"
                           ? " bg-primaryblue px-3 py-2 text-white rounded-md text-md md:text-base"
-                          : "px-8 pl-3 "
+                          : "px-8  "
                       }
                     >
                       Non Binary
